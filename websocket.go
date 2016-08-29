@@ -95,7 +95,7 @@ func wsHandler(results <-chan string) func(http.ResponseWriter, *http.Request) {
 }
 
 // New returns a json result channel
-func newresultChan(results <-chan result) <-chan string {
+func newResultChan(results <-chan result) <-chan string {
 	js := make(chan string)
 
 	go func() {

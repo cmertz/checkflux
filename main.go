@@ -12,7 +12,7 @@ func main() {
 		go newRandomCheck(i, results).Perform()
 	}
 
-	http.HandleFunc("/results", wsHandler(newresultChan(results)))
+	http.HandleFunc("/results", wsHandler(newResultChan(results)))
 	http.HandleFunc("/", newDashboard("/results"))
 
 	log.Fatal(http.ListenAndServe(":9090", nil))
