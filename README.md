@@ -1,3 +1,3 @@
 # checkflux
 
-Toying around with websockets and golang.
+Toying around with a billow visualization for high density dashboards with websockets and golang.
